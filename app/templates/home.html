@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title style = "font-family:georgia,garamond,serif;font-size:16px;font-style:italic;"> Nana x Thich Cat / Dog Classifer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/style.css " type="text/css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+    </style>
+
+  </head>
+<body class="bg-img1" style="height:100vh; overflow-y: scroll;">
+
+        <div class="container">
+            <h1 class="title" style="margin-top: 5rem; font-size: 3.5rem;font-family: monospace;">
+              Nana x Thich 
+            </h1>
+            <h1 class="title" style="margin-top: 0.5rem; font-size: 3.5rem;font-family: monospace;">
+              Cat / Dog Classifer
+            </h1>
+           
+            <!-- <div style="text-align: center">
+                <img class="bg-img1" src="{{ url_for('static', filename='images/bg.jpg') }}"/>
+            </div> -->
+        </div>   
+
+        <div class="container has-text-centered bg-text" style="width: 100%">
+              <div>
+                <i class="arrow_down"></i>
+                <form action="/classify" method="post" enctype="multipart/form-data" style="margin-top: 30px; width: 80%; text-align: center; margin: auto;">
+                  <div class="file has-name is-centered">     
+                      <label class="file-label">
+                        <input class="file-input" type="file" id="image" name = "image">
+                        <span class="file-cta">
+                          <span class="file-label">
+                            Upload a Pic of your Furry Friend!
+                          </span>
+                        </span>
+
+      
+                      </label>
+                    </div>
+                    <br>
+                    <input type="submit" value="Predict" class="button is-black" name = "image" id="classify_button">
+                </form>
+                </div>
+               
+              </div>
+            </div>
+        </div>
+<!-- .section -->
+<!-- <section class="bd-footer-link">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                        <article class="media notification has-background-white">
+                            <div class="media-content">
+                                <div class="content">
+                              
+                                </div>
+                            </div>    
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- /.section -->
+<!-- /.hero -->
+
+</body>
+<script src="/static/script.js"></script>
+
+</html>
